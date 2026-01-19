@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>OOP Practical – FULL One Click Copy</title>
+
+<style>
+body { font-family: Arial; background:#f2f2f2; padding:20px; }
+h1 { text-align:center; color:#222; }
+h2 { background:#222; color:#fff; padding:8px; }
+h3 { color:#333; }
+pre {
+ background:#fff;
+ padding:10px;
+ border-radius:5px;
+ overflow:auto;
+ font-size:14px;
+}
+button {
+ background:#28a745;
+ color:white;
+ border:none;
+ padding:6px 14px;
+ cursor:pointer;
+ border-radius:4px;
+ margin-bottom:10px;
+}
+button:hover { background:#218838; }
+</style>
+
+<script>
+function copyText(id) {
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text);
+  alert("Copied Successfully!");
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>OOP PRACTICAL – ALL PROGRAMS (ONE CLICK COPY)</h1>
+
+<!-- PRACTICAL 1 -->
+<h2>PRACTICAL 1 – BASIC PROGRAMS</h2>
+
+<h3>Hello World</h3>
+<button onclick="copyText('p1')">📋 Copy</button>
+<pre id="p1">
+#include <iostream>
+using namespace std;
+int main() {
+    cout << "Hello World";
+    return 0;
+}
+</pre>
+
+<h3>Square of Number</h3>
+<button onclick="copyText('p2')">📋 Copy</button>
+<pre id="p2">
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin >> n;
+    cout << n*n;
+    return 0;
+}
+</pre>
+
+<h3>Area of Circle</h3>
+<button onclick="copyText('p3')">📋 Copy</button>
+<pre id="p3">
+#include <iostream>
+using namespace std;
+int main() {
+    float r;
+    cin >> r;
+    cout << 3.14*r*r;
+    return 0;
+}
+</pre>
+
+<h3>Area of Rectangle</h3>
+<button onclick="copyText('p4')">📋 Copy</button>
+<pre id="p4">
+#include <iostream>
+using namespace std;
+int main() {
+    float l,b;
+    cin >> l >> b;
+    cout << l*b;
+    return 0;
+}
+</pre>
+
+<h3>First 10 Natural Numbers</h3>
+<button onclick="copyText('p5')">📋 Copy</button>
+<pre id="p5">
+#include <iostream>
+using namespace std;
+int main() {
+    for(int i=1;i<=10;i++)
+        cout<<i<<" ";
+    return 0;
+}
+</pre>
+
+<h3>Descending Order</h3>
+<button onclick="copyText('p6')">📋 Copy</button>
+<pre id="p6">
+#include <iostream>
+using namespace std;
+int main() {
+    for(int i=10;i>=1;i--)
+        cout<<i<<" ";
+    return 0;
+}
+</pre>
+
+<h3>While Loop</h3>
+<button onclick="copyText('p7')">📋 Copy</button>
+<pre id="p7">
+#include <iostream>
+using namespace std;
+int main() {
+    int i=1;
+    while(i<=5) {
+        cout<<i<<" ";
+        i++;
+    }
+    return 0;
+}
+</pre>
+
+<h3>Do While Loop</h3>
+<button onclick="copyText('p8')">📋 Copy</button>
+<pre id="p8">
+#include <iostream>
+using namespace std;
+int main() {
+    int i=1;
+    do {
+        cout<<i<<" ";
+        i++;
+    } while(i<=5);
+    return 0;
+}
+</pre>
+
+<h3>Sum of First 10 Numbers</h3>
+<button onclick="copyText('p9')">📋 Copy</button>
+<pre id="p9">
+#include <iostream>
+using namespace std;
+int main() {
+    int sum=0;
+    for(int i=1;i<=10;i++)
+        sum+=i;
+    cout<<sum;
+    return 0;
+}
+</pre>
+
+<h3>Factorial</h3>
+<button onclick="copyText('p10')">📋 Copy</button>
+<pre id="p10">
+#include <iostream>
+using namespace std;
+int main() {
+    int n,f=1;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+        f*=i;
+    cout<<f;
+    return 0;
+}
+</pre>
+
+<!-- PRACTICAL 2 -->
+<h2>PRACTICAL 2 – LOOPING & BRANCHING</h2>
+
+<h3>Simple Calculator</h3>
+<button onclick="copyText('p11')">📋 Copy</button>
+<pre id="p11">
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b,ch;
+    cin>>a>>b>>ch;
+    switch(ch) {
+        case 1: cout<<a+b; break;
+        case 2: cout<<a-b; break;
+        case 3: cout<<a*b; break;
+        case 4: cout<<a/b; break;
+    }
+    return 0;
+}
+</pre>
+
+<h3>Seconds to Hours Minutes Seconds</h3>
+<button onclick="copyText('p12')">📋 Copy</button>
+<pre id="p12">
+#include <iostream>
+using namespace std;
+int main() {
+    int s,h,m;
+    cin>>s;
+    h=s/3600;
+    m=(s%3600)/60;
+    s=s%60;
+    cout<<h<<" "<<m<<" "<<s;
+    return 0;
+}
+</pre>
+
+<h3>Volume of Square, Cone, Rectangle</h3>
+<button onclick="copyText('p13')">📋 Copy</button>
+<pre id="p13">
+#include <iostream>
+using namespace std;
+int main() {
+    float a,r,h,l,b;
+    cin>>a;
+    cout<<a*a*a<<endl;
+    cin>>r>>h;
+    cout<<(3.14*r*r*h)/3<<endl;
+    cin>>l>>b>>h;
+    cout<<l*b*h;
+    return 0;
+}
+</pre>
+
+<!-- PRACTICAL 3 -->
+<h2>PRACTICAL 3 – LOOPING & BRANCHING</h2>
+
+<h3>Greatest of Three Numbers</h3>
+<button onclick="copyText('p14')">📋 Copy</button>
+<pre id="p14">
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b,c;
+    cin>>a>>b>>c;
+    if(a>b && a>c) cout<<a;
+    else if(b>a && b>c) cout<<b;
+    else cout<<c;
+    return 0;
+}
+</pre>
+
+<h3>Even and Odd Count</h3>
+<button onclick="copyText('p15')">📋 Copy</button>
+<pre id="p15">
+#include <iostream>
+using namespace std;
+int main() {
+    int n,e=0,o=0;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+        if(i%2==0) e++; else o++;
+    cout<<e<<" "<<o;
+    return 0;
+}
+</pre>
+
+<h3>Prime Numbers</h3>
+<button onclick="copyText('p16')">📋 Copy</button>
+<pre id="p16">
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin>>n;
+    for(int i=2;i<=n;i++) {
+        int c=0;
+        for(int j=1;j<=i;j++)
+            if(i%j==0) c++;
+        if(c==2) cout<<i<<" ";
+    }
+    return 0;
+}
+</pre>
+
+<h3>Reverse Number</h3>
+<button onclick="copyText('p17')">📋 Copy</button>
+<pre id="p17">
+#include <iostream>
+using namespace std;
+int main() {
+    int n,r=0;
+    cin>>n;
+    while(n!=0) {
+        r=r*10+n%10;
+        n/=10;
+    }
+    cout<<r;
+    return 0;
+}
+</pre>
+
+<!-- PRACTICAL 4 -->
+<h2>PRACTICAL 4 – CLASS & OBJECT</h2>
+
+<h3>Student Class</h3>
+<button onclick="copyText('p18')">📋 Copy</button>
+<pre id="p18">
+#include <iostream>
+using namespace std;
+class Student {
+    string name,roll;
+public:
+    void get() { cin>>name>>roll; }
+    void show() { cout<<name<<" "<<roll; }
+};
+int main() {
+    Student s;
+    s.get();
+    s.show();
+    return 0;
+}
+</pre>
+
+<h3>Bank Employee</h3>
+<button onclick="copyText('p19')">📋 Copy</button>
+<pre id="p19">
+#include <iostream>
+using namespace std;
+class Employee {
+public:
+    int bal;
+    void get() { cin>>bal; }
+    void dep(int a){ bal+=a; }
+    void wit(int a){ bal-=a; }
+};
+int main() {
+    Employee e;
+    e.get();
+    e.dep(100);
+    e.wit(50);
+    cout<<e.bal;
+    return 0;
+}
+</pre>
+
+<h3>Function Outside Class</h3>
+<button onclick="copyText('p20')">📋 Copy</button>
+<pre id="p20">
+#include <iostream>
+using namespace std;
+class Student {
+    string name;
+public:
+    void get();
+    void show();
+};
+void Student::get() { cin>>name; }
+void Student::show() { cout<<name; }
+int main() {
+    Student s;
+    s.get();
+    s.show();
+    return 0;
+}
+</pre>
+
+</body>
+</html>
